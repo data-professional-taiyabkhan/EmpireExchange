@@ -1,31 +1,11 @@
-// app/(site)/products/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 const sections = [
-  {
-    id: "rice",
-    title: "Rice & Grains",
-    items: ["Basmati 1121", "Golden Sella", "Sona Masoori", "Parboiled Rice"],
-    img: "/assets/rice.png",
-  },
-  {
-    id: "spices",
-    title: "Spices",
-    items: ["Turmeric", "Chili", "Coriander", "Cumin", "Masala Blends", "Whole & Ground Spices"],
-    img: "/assets/spices.png",
-  },
-  {
-    id: "legumes",
-    title: "Legumes & Beans",
-    items: ["Toor Dal", "Chana", "Masoor", "Red & Green Lentils", "Kidney Beans", "Chickpeas"],
-    img: "/assets/legumes.png",
-  },
-  {
-    id: "essentials",
-    title: "Essentials",
-    items: ["Atta (Flour)", "Edible Oils", "Pickles", "Condiments"],
-    img: "/assets/essentials.png",
-  },
+  { id: 'rice', title: 'Rice & Grains', img: '/assets/rice.png', items: ['Basmati 1121','Golden Sella','Sona Masoori','Parboiled Rice'] },
+  { id: 'spices', title: 'Spices', img: '/assets/spices.png', items: ['Turmeric','Chili','Coriander','Cumin','Masala Blends','Whole & Ground Spices'] },
+  { id: 'legumes', title: 'Legumes & Beans', img: '/assets/legumes.png', items: ['Toor Dal','Chana','Masoor','Red & Green Lentils','Kidney Beans','Chickpeas'] },
+  { id: 'essentials', title: 'Essentials', img: '/assets/essentials.png', items: ['Atta (Flour)','Edible Oils','Pickles','Condiments'] },
 ];
 
 export default function ProductsPage() {
@@ -35,16 +15,18 @@ export default function ProductsPage() {
       <div className="grid gap-8">
         {sections.map((s) => (
           <div key={s.id} id={s.id} className="grid gap-4 md:grid-cols-[1fr,2fr] items-center">
-            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border">
-              <Image src={s.img} alt={s.title} fill className="object-cover" />
+            <div className="rounded-xl overflow-hidden border">
+              <Link href={`/products/${s.id}`}>
+                <Image src={s.img} alt={s.title} width={1200} height={800} className="w-full h-auto object-cover" />
+              </Link>
             </div>
             <div>
-              <h2 className="text-2xl font-semibold">{s.title}</h2>
+              <h2 className="text-2xl font-semibold">
+                <Link href={`/products/${s.id}`} className="hover:text-brand">{s.title}</Link>
+              </h2>
               <ul className="mt-3 grid grid-cols-2 gap-2">
                 {s.items.map((item) => (
-                  <li key={item} className="rounded-lg border px-3 py-2">
-                    {item}
-                  </li>
+                  <li key={item} className="rounded-lg border px-3 py-2">{item}</li>
                 ))}
               </ul>
             </div>
