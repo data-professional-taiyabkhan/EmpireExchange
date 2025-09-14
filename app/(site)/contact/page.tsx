@@ -154,7 +154,8 @@ export default function ContactPage() {
               
               {status === 'sent' && (
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <p className="text-green-800 font-medium">✅ Thank you! We'll be in touch within one business day.</p>
+                  <p className="text-green-800 font-medium">✅ Thank you! Your enquiry has been sent and we'll be in touch within one business day.</p>
+                  <p className="text-green-700 text-sm mt-2">You can also reach us directly at <a href="tel:+447424914353" className="underline hover:text-green-900">+44 7424 914353</a> for urgent enquiries.</p>
                 </div>
               )}
               {status === 'error' && (
