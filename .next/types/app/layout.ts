@@ -1,4 +1,4 @@
-// File: /Users/yasjudanulislam/Documents/EmpireExchange/EmpireExchange/app/layout.tsx
+// File: D:\Projects\Personal\Working on It\UmeshBhai-Website\empire-exchange-site\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

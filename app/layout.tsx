@@ -3,6 +3,8 @@ import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
+import Loading from '@/components/Loading';
 
 export const metadata: Metadata = {
   title: 'Empire Exchange | Import & Wholesale – Rice, Spices, Groceries',
@@ -22,7 +24,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-white text-gray-900 antialiased">
         <TopBar />
         <Header />
-        <main>{children}</main>
+        <main>
+          <Suspense fallback={<Loading />}>
+            {children}
+          </Suspense>
+        </main>
         <Footer />
       </body>
     </html>

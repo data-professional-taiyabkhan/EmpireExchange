@@ -18,7 +18,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/about" className="hover:text-brand">About</Link>
           <Link href="/products" className="hover:text-brand">Products</Link>
-          <Link href="/wholesale" className="hover:text-brand">Wholesale &amp; Payments</Link>
+          <Link href="/wholesale" className="hover:text-brand">Wholesale & Payments</Link>
           <Link href="/careers" className="hover:text-brand">Careers</Link>
           <Link href="/contact" className="hover:text-brand">Contact</Link>
           <Link href="/contact#enquiry" className="ml-2 inline-flex items-center rounded-full bg-brand px-4 py-2 text-white hover:bg-brand-light">Wholesale Enquiry</Link>
@@ -29,7 +29,7 @@ export default function Header() {
           <div className="container py-3 flex flex-col gap-3">
             <Link href="/about" onClick={() => setOpen(false)}>About</Link>
             <Link href="/products" onClick={() => setOpen(false)}>Products</Link>
-            <Link href="/wholesale" onClick={() => setOpen(false)}>Wholesale &amp; Payments</Link>
+            <Link href="/wholesale" onClick={() => setOpen(false)}>Wholesale & Payments</Link>
             <Link href="/careers" onClick={() => setOpen(false)}>Careers</Link>
             <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
             <Link href="/contact#enquiry" onClick={() => setOpen(false)} className="inline-flex items-center rounded-full bg-brand px-4 py-2 text-white">Wholesale Enquiry</Link>

@@ -1,5 +1,5 @@
 // lib/products.ts
-export type Subcat = { name: string; slug: string };
+export type Subcat = { name: string; slug: string; image: string };
 export type Category = {
   key: 'rice' | 'spices' | 'legumes' | 'essentials';
   title: string;
@@ -11,12 +11,12 @@ export const PRODUCTS: Category[] = [
   {
     key: 'rice',
     title: 'Rice & Grains',
-    heroImg: '/assets/rice.png',
+    heroImg: '/assets/Rice & Grains.png',
     subcats: [
-      { name: 'Basmati 1121', slug: 'basmati-1121' },
-      { name: 'Golden Sella', slug: 'golden-sella' },
-      { name: 'Sona Masoori', slug: 'sona-masoori' },
-      { name: 'Parboiled Rice', slug: 'parboiled-rice' },
+      { name: 'Basmati 1121', slug: 'basmati-1121', image: '/assets/Basmati_1121.png' },
+      { name: 'Golden Sella', slug: 'golden-sella', image: '/assets/Golden_Sella.png' },
+      { name: 'Sona Masoori', slug: 'sona-masoori', image: '/assets/Sona_Masoori.png' },
+      { name: 'Parboiled Rice', slug: 'parboiled-rice', image: '/assets/Parboiled_Rice.png' },
     ],
   },
   {
@@ -24,25 +24,25 @@ export const PRODUCTS: Category[] = [
     title: 'Spices',
     heroImg: '/assets/spices.png',
     subcats: [
-      { name: 'Turmeric', slug: 'turmeric' },
-      { name: 'Chili', slug: 'chili' },
-      { name: 'Coriander', slug: 'coriander' },
-      { name: 'Cumin', slug: 'cumin' },
-      { name: 'Masala Blends', slug: 'masala-blends' },
-      { name: 'Whole & Ground Spices', slug: 'whole-and-ground' },
+      { name: 'Turmeric', slug: 'turmeric', image: '/assets/Turmeric.png' },
+      { name: 'Chili', slug: 'chili', image: '/assets/Chili.png' },
+      { name: 'Coriander', slug: 'coriander', image: '/assets/Coriander.png' },
+      { name: 'Cumin', slug: 'cumin', image: '/assets/Cumin.png' },
+      { name: 'Masala Blends', slug: 'masala-blends', image: '/assets/Masala_Blends.png' },
+      { name: 'Whole & Ground Spices', slug: 'whole-and-ground', image: '/assets/Whole_and_Ground_Spices.png' },
     ],
   },
   {
     key: 'legumes',
     title: 'Legumes & Beans',
-    heroImg: '/assets/legumes.png',
+    heroImg: '/assets/Legumes & Beans.png',
     subcats: [
-      { name: 'Toor Dal', slug: 'toor-dal' },
-      { name: 'Chana', slug: 'chana' },
-      { name: 'Masoor', slug: 'masoor' },
-      { name: 'Red & Green Lentils', slug: 'red-green-lentils' },
-      { name: 'Kidney Beans', slug: 'kidney-beans' },
-      { name: 'Chickpeas', slug: 'chickpeas' },
+      { name: 'Toor Dal', slug: 'toor-dal', image: '/assets/Legumes & Beans.png' },
+      { name: 'Chana', slug: 'chana', image: '/assets/Legumes & Beans.png' },
+      { name: 'Masoor', slug: 'masoor', image: '/assets/Legumes & Beans.png' },
+      { name: 'Red & Green Lentils', slug: 'red-green-lentils', image: '/assets/Legumes & Beans.png' },
+      { name: 'Kidney Beans', slug: 'kidney-beans', image: '/assets/Legumes & Beans.png' },
+      { name: 'Chickpeas', slug: 'chickpeas', image: '/assets/Legumes & Beans.png' },
     ],
   },
   {
@@ -50,10 +50,10 @@ export const PRODUCTS: Category[] = [
     title: 'Essentials',
     heroImg: '/assets/essentials.png',
     subcats: [
-      { name: 'Atta (Flour)', slug: 'atta-flour' },
-      { name: 'Edible Oils', slug: 'edible-oils' },
-      { name: 'Pickles', slug: 'pickles' },
-      { name: 'Condiments', slug: 'condiments' },
+      { name: 'Atta (Flour)', slug: 'atta-flour', image: '/assets/Atta (Flour).png' },
+      { name: 'Edible Oils', slug: 'edible-oils', image: '/assets/essentials.png' },
+      { name: 'Pickles', slug: 'pickles', image: '/assets/essentials.png' },
+      { name: 'Condiments', slug: 'condiments', image: '/assets/Condiments.png' },
     ],
   },
 ];

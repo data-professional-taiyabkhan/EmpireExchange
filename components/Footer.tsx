@@ -4,13 +4,13 @@ export default function Footer() {
       <div className="container py-10 grid gap-8 md:grid-cols-4 text-sm">
         <div>
           <div className="text-brand text-lg font-semibold">Empire Exchange</div>
-          <p className="mt-2 text-gray-600">Authentic rice, spices, legumes &amp; essentials for UK retailers, restaurants, and distributors.</p>
+          <p className="mt-2 text-gray-600">Authentic rice, spices, legumes & essentials for UK retailers, restaurants, and distributors.</p>
         </div>
         <div>
           <div className="font-semibold mb-2">Company</div>
           <ul className="space-y-1 text-gray-700">
-            <li>Company Reg: 00000000</li>
-            <li>VAT: 000 0000 00</li>
+            <li>Company Registration No: Empire Exchange Limited</li>
+            <li>VAT Number: 498 8155 24</li>
             <li><a className="hover:text-brand" href="/about">About</a></li>
             <li><a className="hover:text-brand" href="/careers">Careers</a></li>
           </ul>
@@ -19,9 +19,8 @@ export default function Footer() {
           <div className="font-semibold mb-2">Contact</div>
           <ul className="space-y-1 text-gray-700">
             <li>Mon–Sat: 9:00–18:00</li>
-            <li>Phone: +44 0000 000000</li>
+            <li>Phone: +44 7424 914353</li>
             <li>Email: info@empireexchange.co.uk</li>
-            <li>Address: London, United Kingdom</li>
           </ul>
         </div>
         <div>
@@ -34,7 +33,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t">
-        <div className="container py-4 text-xs text-gray-600">&copy; {new Date().getFullYear()} Empire Exchange Limited. All rights reserved.</div>
+        <div className="container py-4 flex flex-wrap justify-between items-center text-xs text-gray-600 gap-4">
+          <div>&copy; {new Date().getFullYear()} Empire Exchange Limited. All rights reserved.</div>
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-brand">Carbon Reduction Plan</a>
+            <a href="#" className="hover:text-brand">Modern Slavery Statement</a>
+            <a href="#" className="hover:text-brand">Evergreen Assessment Statement</a>
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-// File: /Users/yasjudanulislam/Documents/EmpireExchange/EmpireExchange/app/(site)/products/[category]/page.tsx
+// File: D:\Projects\Personal\Working on It\UmeshBhai-Website\empire-exchange-site\app\(site)\products\[category]\page.tsx
 import * as entry from '../../../../../../app/(site)/products/[category]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

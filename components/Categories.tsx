@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 const cats = [
-  { name: 'Rice &amp; Grains', img: 'https://images.unsplash.com/photo-1586201375754-1421e0aa2fda?q=80&w=1200&auto=format&fit=crop', href: '/products#rice' },
-  { name: 'Spices', img: 'https://images.unsplash.com/photo-1505575972945-280b9f1b81f4?q=80&w=1200&auto=format&fit=crop', href: '/products#spices' },
-  { name: 'Legumes &amp; Beans', img: 'https://images.unsplash.com/photo-1615485737651-cb4b76f1cd86?q=80&w=1200&auto=format&fit=crop', href: '/products#legumes' },
-  { name: 'Essentials', img: 'https://images.unsplash.com/photo-1604908813570-9c566a45c03a?q=80&w=1200&auto=format&fit=crop', href: '/products#essentials' },
+  { name: 'Rice & Grains', img: '/assets/Rice & Grains.png', href: '/products#rice' },
+  { name: 'Spices', img: '/assets/spices.png', href: '/products#spices' },
+  { name: 'Legumes & Beans', img: '/assets/Legumes & Beans.png', href: '/products#legumes' },
+  { name: 'Essentials', img: '/assets/essentials.png', href: '/products#essentials' },
 ];
 
 export default function Categories() {

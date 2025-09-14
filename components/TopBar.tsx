@@ -7,7 +7,7 @@ export default function TopBar() {
         <div className="flex flex-wrap gap-3">
           <span>Email: info@empireexchange.co.uk</span>
           <span className="hidden sm:inline">•</span>
-          <span>UK: +44 0000 000000</span>
+          <span>UK: +44 7424 914353</span>
         </div>
         <Link href="/contact#enquiry" className="rounded-full bg-brand px-3 py-1.5 text-white hover:bg-brand-light">
           Get a Free Quote

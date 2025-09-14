@@ -4,17 +4,17 @@ const features = [
   {
     title: "Direct Sourcing",
     desc: "We work with trusted exporters to ensure authenticity and compliance.",
-    img: "https://images.unsplash.com/photo-1615559054071-08e6b24635e0?q=80&w=1200&auto=format&fit=crop",
+    img: "/assets/spices.png",
   },
   {
     title: "UK Warehouse",
     desc: "Local stock for reliable, on-time deliveries across the UK.",
-    img: "https://images.unsplash.com/photo-1586521995568-39ab25ab7e5d?q=80&w=1200&auto=format&fit=crop",
+    img: "/assets/Rice & Grains.png",
   },
   {
     title: "Transparent Payments",
     desc: "Clear invoicing, VAT-compliant, and credit terms for approved partners.",
-    img: "https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1200&auto=format&fit=crop",
+    img: "/assets/Legumes & Beans.png",
   },
 ];
 
