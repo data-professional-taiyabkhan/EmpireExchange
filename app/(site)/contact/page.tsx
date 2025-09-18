@@ -7,15 +7,17 @@ export default function ContactPage() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form) as any);
     setStatus('sending');
+    
     try {
-      const res = await fetch('/api/contact', {
+      // Formspree integration - replace 'YOUR_FORM_ID' with your actual Formspree form ID
+      const res = await fetch('https://formspree.io/f/xvgbjlpr', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify(Object.fromEntries(new FormData(form) as any)),
       });
-      if (!res.ok) throw new Error('Network');
+      
+      if (!res.ok) throw new Error('Network error');
       setStatus('sent');
       form.reset();
     } catch (e) {
@@ -89,7 +91,13 @@ export default function ContactPage() {
             </div>
           </div>
           {/* Contact Form */}
-          <form id="enquiry" onSubmit={onSubmit} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <form 
+            id="enquiry" 
+            action="https://formspree.io/f/xvgbjlpr"
+            method="POST"
+            onSubmit={onSubmit} 
+            className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
+          >
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Send Us a Message</h3>
               <p className="text-gray-600">Fill out the form below and we'll get back to you within one business day.</p>

@@ -4,16 +4,23 @@ export default function Footer() {
       <div className="container py-10 grid gap-8 md:grid-cols-4 text-sm">
         <div>
           <div className="text-brand text-lg font-semibold">Empire Exchange</div>
-          <p className="mt-2 text-gray-600">Authentic rice, spices, legumes & essentials for UK retailers, restaurants, and distributors.</p>
+          <p className="mt-2 text-gray-600">Empire Exchange Limited delivers authentic rice, spices, legumes & essentials for UK retailers, restaurants, and distributors.</p>
         </div>
         <div>
           <div className="font-semibold mb-2">Company</div>
           <ul className="space-y-1 text-gray-700">
-            <li>Company Registration No: Empire Exchange Limited</li>
+            <li>Empire Exchange Limited</li>
             <li>VAT Number: 498 8155 24</li>
             <li><a className="hover:text-brand" href="/about">About</a></li>
             <li><a className="hover:text-brand" href="/careers">Careers</a></li>
           </ul>
+          <div className="mt-3">
+            <div className="font-semibold mb-1">Registered office address</div>
+            <div className="text-gray-700 text-xs">
+              Chilterns House, 64, High Street,<br />
+              Burnham, Bucks, England, SL1 7JT
+            </div>
+          </div>
         </div>
         <div>
           <div className="font-semibold mb-2">Contact</div>

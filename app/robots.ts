@@ -5,7 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: ['/api/', '/_next/', '/admin/'],
     },
-    sitemap: 'https://example.com/sitemap.xml',
+    sitemap: 'https://empireexchange.co.uk/sitemap.xml',
+    host: 'https://empireexchange.co.uk',
   };
 }

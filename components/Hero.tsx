@@ -11,8 +11,8 @@ export default function Hero() {
             <span className="text-brand">Rice, Spices & Groceries</span> – Imported with Care, Delivered with Trust.
           </h1>
           <p className="mt-4 text-gray-600 max-w-prose">
-            We are a UK-based importer and wholesaler delivering authentic food essentials with
-            reliability, transparency, and a commitment to excellence.
+            Empire Exchange Limited is a UK-based importer and wholesaler delivering authentic food essentials with
+            reliability, transparency, and a commitment to excellence. As Empire Exchange Limited, we ensure every product meets the highest standards.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/products" className="inline-flex items-center rounded-full bg-brand px-5 py-2.5 text-white hover:bg-brand-light">Explore Products</Link>

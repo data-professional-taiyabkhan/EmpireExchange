@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+Host: https://empireexchange.co.uk
+Sitemap: https://empireexchange.co.uk/sitemap.xml

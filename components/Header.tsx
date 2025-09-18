@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -7,7 +8,17 @@ export default function Header() {
   return (
     <header className="border-b border-gray-200 bg-white sticky top-0 z-40">
       <div className="container py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-semibold text-brand">Empire Exchange</Link>
+        <Link href="/" className="flex items-center space-x-3">
+          <Image 
+            src="/assets/empire-exchange-logo.png.png" 
+            alt="Empire Exchange Logo" 
+            width={40} 
+            height={40}
+            className="h-10 w-auto"
+            priority
+          />
+          <span className="text-xl font-semibold text-brand">Empire Exchange</span>
+        </Link>
         <button
           className="md:hidden rounded-lg border px-3 py-2"
           aria-label="Toggle navigation"

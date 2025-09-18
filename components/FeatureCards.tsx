@@ -3,17 +3,17 @@ import Image from 'next/image';
 const features = [
   {
     title: "Direct Sourcing",
-    desc: "We work with trusted exporters to ensure authenticity and compliance.",
+    desc: "Empire Exchange Limited works with trusted exporters to ensure authenticity and compliance.",
     img: "/assets/spices.png",
   },
   {
     title: "UK Warehouse",
-    desc: "Local stock for reliable, on-time deliveries across the UK.",
+    desc: "Empire Exchange Limited maintains local stock for reliable, on-time deliveries across the UK.",
     img: "/assets/Rice & Grains.png",
   },
   {
     title: "Transparent Payments",
-    desc: "Clear invoicing, VAT-compliant, and credit terms for approved partners.",
+    desc: "Empire Exchange Limited provides clear invoicing, VAT-compliant, and credit terms for approved partners.",
     img: "/assets/Legumes & Beans.png",
   },
 ];
